@@ -1,9 +1,9 @@
 
 <h3>Add etudiant</h3>
 <div>
-    <input type="text" placeholder="CNE">
-    <input type="text" placeholder="nom">
-    <input type="text" placeholder="prenom">
-    <input type="date" placeholder="date de naissance">
+    <input #cne type="text" placeholder="CNE">
+    <input #nom type="text" placeholder="nom">
+    <input #prenom type="text" placeholder="prenom">
+    <input #dateNaissance type="date" placeholder="date de naissance">
 </div>
-<button>Ajouter</button>
+<button (click)="onAjouter(cne,nom,prenom,dateNaissance)">Ajouter</button>

@@ -10,8 +10,9 @@
         </tr>
     </thead>
     <tbody>
-        <app-ligne-student *ngFor="let student of students" [student]="student" >
-  
-        </app-ligne-student>
+        <tr class="app-ligne-student" [style.background]="getBgColor(i)"
+        *ngFor="let student of students;let i=index" [attr.data-index]="i" [student]="student" >
+
+        </tr>
     </tbody>
 </table>

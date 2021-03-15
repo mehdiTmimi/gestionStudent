@@ -9,7 +9,7 @@ import { GestionComponent } from './components/gestion/gestion.component';
 import { AddEtudiantComponent } from './components/add-etudiant/add-etudiant.component';
 import { ListeEtudiantComponent } from './components/liste-etudiant/liste-etudiant.component';
 import { LigneStudentComponent } from './components/ligne-student/ligne-student.component';
-
+import {EtudiantsService} from './services/etudiants.service'
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +24,7 @@ import { LigneStudentComponent } from './components/ligne-student/ligne-student.
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [EtudiantsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

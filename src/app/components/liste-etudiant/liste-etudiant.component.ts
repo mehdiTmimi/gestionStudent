@@ -12,5 +12,12 @@ export class ListeEtudiantComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  public getBgColor(index):String
+  {
+    console.log(index);
+    if (index%2==0)
+    return 'lightgray';
+    return 'white'
+  }
 
 }
