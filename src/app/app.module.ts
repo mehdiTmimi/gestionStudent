@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { GestionComponent } from './components/gestion/gestion.component';
 import { AddEtudiantComponent } from './components/add-etudiant/add-etudiant.component';
 import { ListeEtudiantComponent } from './components/liste-etudiant/liste-etudiant.component';
+import { LigneStudentComponent } from './components/ligne-student/ligne-student.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ListeEtudiantComponent } from './components/liste-etudiant/liste-etudia
     FooterComponent,
     GestionComponent,
     AddEtudiantComponent,
-    ListeEtudiantComponent
+    ListeEtudiantComponent,
+    LigneStudentComponent
   ],
   imports: [
     BrowserModule,

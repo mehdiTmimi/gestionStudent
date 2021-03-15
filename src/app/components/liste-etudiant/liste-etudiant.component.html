@@ -10,6 +10,8 @@
         </tr>
     </thead>
     <tbody>
-
+        <app-ligne-student *ngFor="let student of students" [student]="student" >
+  
+        </app-ligne-student>
     </tbody>
 </table>
