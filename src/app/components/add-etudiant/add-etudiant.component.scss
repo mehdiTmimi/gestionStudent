@@ -16,3 +16,10 @@ button{
     color: white;
     font-size: 20px;
 }
+button:disabled{
+    background-color: gray;
+}
+li{
+    color: red;
+    display: block;
+}

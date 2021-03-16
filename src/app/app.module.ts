@@ -10,6 +10,8 @@ import { AddEtudiantComponent } from './components/add-etudiant/add-etudiant.com
 import { ListeEtudiantComponent } from './components/liste-etudiant/liste-etudiant.component';
 import { LigneStudentComponent } from './components/ligne-student/ligne-student.component';
 import {EtudiantsService} from './services/etudiants.service'
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,7 @@ import {EtudiantsService} from './services/etudiants.service'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,ReactiveFormsModule
   ],
   providers: [EtudiantsService],
   bootstrap: [AppComponent]

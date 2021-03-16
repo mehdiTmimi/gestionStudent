@@ -1,9 +1,14 @@
 
 <h3>Add etudiant</h3>
-<div>
-    <input #cne type="text" placeholder="CNE">
-    <input #nom type="text" placeholder="nom">
-    <input #prenom type="text" placeholder="prenom">
-    <input #dateNaissance type="date" placeholder="date de naissance">
-</div>
-<button (click)="onAjouter(cne,nom,prenom,dateNaissance)">Ajouter</button>
+<form (ngSubmit)="onAjouter()" [formGroup]="form">
+    <div>
+        <input [style.border]="cneInput.errors? '4px solid red' : '4px solid green'" [formControl]="cneInput" type="text" placeholder="CNE">
+        <span *ngIf="cneInput.errors?.required">obligatoire</span>
+        <span *ngIf="cneInput.errors?.minlength || cneInput.errors?.maxlength">longueur de 10</span>
+        <input [formControl]="nomInput"  value="ok" type="text" placeholder="nom">
+        <input [formControl]="prenomInput" type="text" placeholder="prenom">
+        <input  [formControl]="dateNaissanceInput" type="date" placeholder="date de naissance">
+    </div>
+    <button [disabled]="!form.valid" type="submit">Ajouter</button>
+</form>
+<button (click)="teste()">t</button>

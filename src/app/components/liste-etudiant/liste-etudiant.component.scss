@@ -1,11 +1,15 @@
 table{
     width: 100%;
+    min-width: 700px;
+
     margin: 10px;
     border-spacing: 0px;
+    overflow-x: hidden;
 }
 th{
     text-transform: uppercase;
 }
 th,td{
-    border:1px solid black
+    border:1px solid black;
+    min-width: 200px;
 }

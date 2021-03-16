@@ -7,8 +7,19 @@ a{
     color: white;
     transition-duration: 1s;
     padding: 10px 20px;
+    text-transform: capitalize;
 }
 a:hover{
     background-color: white;
     color: black;
+}
+@media screen and (max-width:360px){
+
+    nav{
+        margin-top: 20px;
+    }
+    li{
+        display: block;
+        margin: 40px 0px;
+    }
 }
